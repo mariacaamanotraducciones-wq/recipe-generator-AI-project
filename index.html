@@ -3,46 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI healthy Recipe generator</title>
+    <title>AI low-Fodmap Recipe generator</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Healthy recipe generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter ingredients you have in your pantry or fridge"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Recipe goes here <br />
-        second step
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/mariacaamanotraducciones-wq" target="_blank"
-        >Maria Caamano</a
-      >
-      and is
-      <a
-        href="https://github.com/mariacaamanotraducciones-wq/recipe-generator-AI-project"
-        target="_blank"
-      >
-        open sourced on Github</a
-      >
-      and is hosted on
-      <a href="https://recipe-generator-ai-project.vercel.app/" target="_blank"
-        >Vercel</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Low-Fodmap recipe generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter ingredients left in your pantry or fridge"
+            autofocus
+            required
+            autocomplete="off"
+            class="ingredients"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">
+          Recipe goes here <br />
+          second step
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/mariacaamanotraducciones-wq" target="_blank"
+          >Maria Caamano</a
+        >
+        and is
+        <a
+          href="https://github.com/mariacaamanotraducciones-wq/recipe-generator-AI-project"
+          target="_blank"
+        >
+          open sourced on Github</a
+        >
+        and is hosted on
+        <a
+          href="https://recipe-generator-ai-project.vercel.app/"
+          target="_blank"
+          >Vercel</a
+        >
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>

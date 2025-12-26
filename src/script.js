@@ -1,5 +1,4 @@
 function displayRecipe(response) {
-  console.log("recipe concocted");
   new Typewriter("#recipe", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,9 +18,6 @@ function generateRecipe(event) {
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `<div class= "generating">🧑‍🍳Concocting a low Fodmap recipe with ${ingredientsImput.value} for you </div>`;
-  console.log("concocting recipe");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`context: ${context}`);
   axios.get(apiURL).then(displayRecipe);
 }
 let recipeFormElement = document.querySelector("#recipe-generator-form");

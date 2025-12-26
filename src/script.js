@@ -16,6 +16,9 @@ function generateRecipe(event) {
     "You are a nutrition and cooking expert in low Fodmap diet. Your mission is to write a clear and short low Fodmap recipe in basic HTML, and show the recipe directly and do not show the HTML. Make sure to follow user instructions. Sign the recipe with 'Your AI Chef' inside a <strong> element";
   let prompt = `User instructions: generate a low Fodmap recipe with ${ingredientsImput.value} `;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class= "generating">🧑‍🍳Concocting a low Fodmap recipe with ${ingredientsImput.value} for you </div>`;
   console.log("concocting recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`context: ${context}`);
